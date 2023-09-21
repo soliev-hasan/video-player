@@ -55,7 +55,8 @@ export const ListVideo = ({navigation}: RootNavigationProps<'List'>) => {
         {filteredVideo.map(video => (
           <TouchableOpacity
             onPress={() => navigation.navigate('VideoPlayer', {video})}
-            key={video.id}>
+            key={video.id}
+            style={{width: '25%'}}>
             <Image style={styles.img} source={{uri: video.avatar}} />
             {/* <Text style={styles.name}>{video.name}</Text> */}
             <SearchKeywordHighlight

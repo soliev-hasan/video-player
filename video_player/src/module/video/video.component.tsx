@@ -27,7 +27,6 @@ export const VideoPlayer = ({
         source={{uri: video.src}}
         style={{width: '100%', height: 200}}
         controls={true}
-        volume={50}
       />
       <ScrollView style={styles.texts}>
         <Text style={styles.name}>{video.name}</Text>
